@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Scene</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#432214]">
+    <!-- Navbar -->
+    <nav class="bg-[#432214] p-4 shadow-md rounded-none">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3 justify-start">
+                <img src="img/img_8.png" alt="Bean Scene Logo" class="w-12 h-12 rounded-full" width="50" height="50">
+                <div class="text-lg font-semibold text-[#F9F2EB]">Bean Scene</div>
+            </div>
+            <div class="hidden md:flex space-x-6 ml-auto items-center justify-end">
+                <a href="main.html" class="text-[#F9F2EB] hover:text-white rounded-md p-2">Home</a>
+                <a href="menu.html" class="text-[#F9F2EB] hover:text-white rounded-md p-2">Menu</a>
+                <a href="signup.html" class="text-[#F9F2EB] hover:text-white rounded-md p-2">Login</a>
+                <!-- Search box -->
+                <div class="relative ml-4">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    <input type="text" placeholder="Search on site" class="pl-10 pr-4 py-2 rounded-md bg-[#F9F2EB] text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-400 transition w-48" />
+                </div>
+            </div>
+            </div>
+            <button class="md:hidden text-gray-600 hover:text-gray-900 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-4 6h4"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Meet Our Baristas -->
+    <section class="bg-[#9DA97E] py-16 px-4 md:px-8 lg:px-16 flex flex-col md:flex-row items-center justify-center rounded-none m-0 md:m-0">
+        <div class="flex-shrink-0 mb-8 md:mb-0 md:mr-12">
+            <img src="img/img_11.png" alt="Barista" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-lg" width="100" height="100">
+        </div>
+        <div class="text-center md:text-left max-w-2xl">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                <div class="text-center md:text-left max-w-2xl">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Meet Our Baristas</h2>
+                    <p class="text-gray-700 text-lg mb-6">
+                        Get to know the talented individuals behind your favorite brews. Our baristas are passionate about coffee and dedicated to crafting the perfect cup for you.
+                    </p>
+                </div>
+                <div class="flex flex-col space-y-4 md:space-y-2 md:ml-8">
+                    <button class="text-gray-800 font-semibold py-3 px-10 rounded-md border-2 border-gray-800 transition duration-300 ease-in-out whitespace-nowrap">
+                        Visit Us
+                    </button>
+                    <button class="bg-black hover:bg-gray-900 text-white font-semibold py-3 px-10 rounded-md shadow-lg transition duration-300 ease-in-out whitespace-nowrap">
+                        Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="bg-red-100 py-16 px-4 md:px-8 lg:px-16 rounded-none m-0 md:m-0">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Featured Products</h2>
+            <p class="text-gray-700 text-lg mb-8">Try our specialty coffees today!</p>
+            <button class="bg-black hover:bg-gray-900 text-white font-semibold py-3 px-10 rounded-md shadow-lg transition duration-300 ease-in-out mb-12" onclick="window.location.href='menu.html'">
+            Order Now
+            </button>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Product Card 1 -->
+            <div class="p-6 rounded-lg shadow-lg text-center cursor-pointer" onclick="window.location.href='cart.html'">
+                <div class="flex items-center justify-center w-[400px] h-[400px] mx-auto mb-4 bg-white rounded-md overflow-hidden">
+                <img src="img/img_15.png" alt="Cafe Mokka" class="object-contain w-full h-full" width="400" height="400">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-600 mb-2">Cafe Mokka</h3>
+                <p class="text-gray-800">Starting at $3.99</p>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="p-6 rounded-lg shadow-lg text-center">
+                <div class="flex items-center justify-center w-[400px] h-[400px] mx-auto mb-4 bg-white rounded-md overflow-hidden">
+                <img src="img/img_7.png" alt="Iced Americano" class="object-contain w-full h-full" width="400" height="400">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-600 mb-2">Iced Americano</h3>
+                <p class="text-gray-800">Refreshing & Bold</p>
+            </div>                
+            <!-- Product Card 3 -->
+            <div class="p-6 rounded-lg shadow-lg text-center">
+                <div class="flex items-center justify-center w-[400px] h-[400px] mx-auto mb-4 bg-white rounded-md overflow-hidden">
+                <img src="img/img_6.png" alt="Crafted to Perfection" class="object-contain w-full h-full" width="400" height="400">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-600 mb-2">Cappuccino</h3>
+                <p class="text-gray-800">Crafted to Perfection</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Love Section -->
+    <section class="bg-gray-200 py-16 px-4 md:px-8 lg:px-16 rounded-none m-0 md:m-0">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Community Love</h2>
+            <p class="text-gray-700 text-lg mb-8">See what our customers are saying about us!</p>
+            <button class="bg-black hover:bg-gray-900 text-white font-semibold py-3 px-6 rounded-md shadow-lg transition duration-300 ease-in-out mb-12">
+                Join the Conversation
+            </button>
+
+            <div class="flex flex-col items-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg max-w-xl w-full">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/50x50/F5F5F5/000000?text=CL" alt="Customer Avatar" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">CoffeeLover123</p>
+                            <p class="text-sm text-gray-500">2 days ago</p>
+                        </div>
+                    </div>
+                    <img src="img/img_2.png" alt="Coffee Beans" class="w-full h-auto rounded-md mb-4" width="450" height="300">
+                    <p class="text-gray-700 text-left">
+                        "Best coffee ever! Loved the cozy atmosphere and friendly staff. Highly recommend the espresso!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Variety Section -->
+    <section class="bg-stone-300 py-16 px-4 md:px-8 lg:px-16 rounded-none m-0 md:m-0">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Our Variety</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Category 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                    <img src="img/img_21.png" alt="Hot Beverages" class="w-16 h-16 object-cover rounded-full" width="64" height="64">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Hot Beverages</h3>
+                        <p class="text-gray-400">Espresso, Cappuccino, Latte</p>
+                    </div>
+                </div>
+                <!-- Category 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                    <img src="img/img_22.png" alt="Cold Beverages" class="w-16 h-16 object-cover rounded-full" width="64" height="64">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Cold Beverages</h3>
+                        <p class="text-gray-400">Iced Coffee, Cold Brew, Frappuccino</p>
+                    </div>
+                </div>
+                <!-- Category 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
+                    <img src="img/img_20.png" alt="Pastries" class="w-16 h-16 object-cover rounded-full" width="64" height="64">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Pastries</h3>
+                        <p class="text-gray-400">Croissants, Muffins, Cookies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#432214] text-[#F9F2EB] py-8 px-4 md:px-8 lg:px-16 rounded-none m-0 md:m-0">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-4 md:mb-0">
+                <p class="text-lg font-semibold">Bean Scene</p>
+                <p class="text-sm text-[#F9F2EB]/70">Hours: Mon-Sat 7am-9pm</p>
+            </div>
+            <div class="mb-4 md:mb-0">
+                <p class="text-sm text-[#F9F2EB]/70">Contact: 123-456-7890</p>
+            </div>
+            <div>
+                <p class="text-sm text-[#F9F2EB]/70">Follow us: @localcoffeeshop</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/search-data.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
