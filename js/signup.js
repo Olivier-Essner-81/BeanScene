@@ -48,9 +48,9 @@ document.addEventListener('DOMContentLoaded', function () {
             passwordInput.focus();
             return;
         }
-        // If both are OK, redirect to main.html
+        // If both are OK, redirect to index.html
         e.preventDefault();
-        window.location.href = "main.html";
+        window.location.href = "index.html";
     });
 
     // Initial state

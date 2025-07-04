@@ -1,7 +1,7 @@
 window.SEARCH_DATA = [
    {
     title: "Baristas",
-    url: "main.html"
+    url: "index.html"
   },
   {
     title: "Account",
@@ -13,11 +13,11 @@ window.SEARCH_DATA = [
   },
   {
     title: "Iced Americano",
-    url: "main.html"
+    url: "index.html"
   },
   {
     title: "Cappuccino",
-    url: "main.html"
+    url: "index.html"
   }
   // Add more items as needed
 ];
